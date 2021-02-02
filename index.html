@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300"
+      rel="stylesheet"
+    />
+    <!-- <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/tailwind.min.css"
+      media="screen,projection"
+    /> -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviar Email</title>
+  </head>
+  <body>
+    <main class="h-screen flex justify-center items-center bg-gray-700">
+      <div class="container mx-auto bg-white shadow-lg rounded-xl">
+        <header
+          id="header"
+          class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-3 font-bold rounded-t-xl"
+        >
+          Enviar Nuevo Mail
+        </header>
+
+        <form id="enviar-mail" class="py-10 px-5 max-w-lg mx-auto">
+          <div class="mb-10">
+            <label for="email">Para:</label>
+            <input
+              class="bg-gray-100 border shadow-md p-3 w-full rounded-xl"
+              id="email"
+              type="email"
+              placeholder="correo@correo.com"
+            />
+          </div>
+          <div class="mb-10">
+            <label for="asunto">Asunto</label>
+            <input
+              class="bg-gray-100 border shadow-md p-3 w-full rounded-xl"
+              id="asunto"
+              type="text"
+              placeholder="asunto"
+            />
+          </div>
+          <div class="mb-10">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              class="bg-gray-100 border shadow-md p-3 w-full rounded-xl"
+              id="mensaje"
+              placeholder="mensaje"
+            ></textarea>
+          </div>
+
+          <div class="sk-cube-grid hidden-spinner">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+          </div>
+
+          <div class="flex justify-between">
+            <button
+              id="enviar"
+              class="w-full bg-blue-400 px-2 py-5 text-white items-center cursor-not-allowed opacity-50 mr-5 font-semibold items-center flex justify-center rounded-xl focus:outline-none text-xl"
+              type="submit"
+            >
+              Enviar
+              <i class="material-icons right text-white ml-3">send</i>
+            </button>
+
+            <button
+              id="resetBtn"
+              class="w-full bg-green-400 px-2 py-5 text-white items-center font-semibold items-center flex justify-center rounded-xl focus:outline-none text-xl"
+              type="submit"
+            >
+              Resetear Form
+              <i class="material-icons right ml-3">delete</i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
